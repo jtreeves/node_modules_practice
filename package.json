@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jtreeves/node_modules_practice/issues"
   },
-  "homepage": "https://github.com/jtreeves/node_modules_practice#readme"
+  "homepage": "https://github.com/jtreeves/node_modules_practice#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "geometric": "^2.2.4"
+  }
 }
