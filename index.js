@@ -1,6 +1,7 @@
 const foods = require('./foods')
-const geometric = require('geometric')
 const colors = require('colors')
+const geometric = require('geometric')
+const figlet = require('figlet')
 
 function loop(array) {
     for (let i = 0; i < array.length; i++) {
@@ -8,15 +9,12 @@ function loop(array) {
     }
 }
 
-const degreeAngle = geometric.angleToDegrees(3.14)
-const radianAngle = geometric.angleToRadians(180)
+loop(favorites)
 
 const points = geometric.polygonRegular(favorites.length)
+const rainbowFavorite = favorites[0].rainbow
+const figFavorite = figlet.textSync(favorites[0], {font: 'Roman'})
 
-const rainbowFavorites = favorites[0].rainbow
-
-loop(favorites)
-console.log(degreeAngle)
-console.log(radianAngle)
 console.log(points)
-console.log(rainbowFavorites)
+console.log(rainbowFavorite)
+console.log(figFavorite)
